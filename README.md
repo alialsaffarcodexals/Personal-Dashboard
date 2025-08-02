@@ -1,38 +1,24 @@
-# Personal Dashboard – Codex Prompt
+# Personal Dashboard
 
-## Description
-Create a responsive personal dashboard web application using HTML, CSS, and JavaScript (vanilla or React). This dashboard is for private use and should run locally in the browser. No login or backend required.
+A responsive personal dashboard web application built with plain HTML, CSS and JavaScript. Everything runs locally in the browser; no build step or backend is required.
 
 ## Features
-- To-do list with ability to add, edit, delete, and mark tasks complete
-- Notes section with a simple rich-text editor (bold, italic, bullet list)
-- Calendar showing the current month and today's date highlighted
-- Weather widget (dummy data or simple API integration like OpenWeatherMap)
-- Quote of the Day section (random from predefined list or from API)
-- Dark mode toggle
-- Responsive layout for desktop and mobile
-- Optional: Embed a YouTube playlist or podcast player
+- **To‑do list** – add, edit, delete and mark tasks complete. Tasks are saved in `localStorage`.
+- **Notes** – simple rich‑text editor with bold, italic and bullet list formatting. Contents persist in `localStorage`.
+- **Calendar** – displays the current month with today highlighted.
+- **Weather widget** – fetches current conditions using the [Open‑Meteo](https://open-meteo.com/) API (no key required). Coordinates can be adjusted in the script.
+- **Quote of the day** – pulled from the [Quotable](https://api.quotable.io/) API.
+- **Dark mode toggle** – preference is stored in `localStorage`.
+- **Responsive layout** – card‑based grid adapts from desktop to mobile.
+- **Embedded playlist** – sample YouTube playlist included.
 
-## Tech Stack
-- HTML5
-- CSS3 (with flexbox/grid, no frameworks or using Tailwind/Bootstrap optionally)
-- JavaScript (or React with functional components)
-- Optional: OpenWeatherMap API or any public quote API
+## Setup
+1. Clone this repository.
+2. Open `index.html` in a modern web browser. All functionality works offline except weather and quote API calls.
 
-## Page Structure
-- Header: Title, dark mode toggle
-- Main Area: Split into widgets (To-do list, Notes, Calendar, Weather, Quote)
-- Footer: Date/time display or credits
+## Customisation
+- Replace the YouTube playlist `src` with your own playlist or remove the section.
+- Update `fetchWeather()` in `index.html` with different coordinates or another API.
 
-## UI Design Notes
-- Use a card-based layout
-- Minimalist design
-- Support drag-and-drop (optional, for reordering widgets)
-
-## Instructions for Codex
-- Generate clean, commented code
-- Keep all code in one HTML file (or split into JS/CSS files if using React)
-- Ensure all interactive elements work in-browser
-- If using APIs, make it easy to replace API keys
-- Include a README with setup instructions and feature list
-
+## License
+This project is provided for demonstration purposes. Feel free to modify and adapt it for personal use.
